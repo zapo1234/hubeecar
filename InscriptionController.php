@@ -29,8 +29,8 @@ class InscriptionController extends Controller
 		$rules = [
 			'nom' => 'required|string|min:5|max:55',
 			'adresse' => 'required|string|min:3|max:255',
-            'age' => 'required|string|max:5|regex:/[0-9]{1,3}/',
-            'pays' => 'required|string|max:30'
+                        'age' => 'required|string|max:5|regex:/[0-9]{1,3}/',
+                        'pays' => 'required|string|max:30'
 		];
 
 
