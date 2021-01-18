@@ -63,8 +63,8 @@ class InscriptionController extends Controller
 		}
          }
 	
-	// afficher des users dont l'age est inférieur à 40 ans
-	// count sur le nombre de user enregsitré
+	// afficher des users dont l'age est supérieur à 40 ans
+	// count sur le nombre de users enregistré
 
               public function insert(){
 
