@@ -71,5 +71,6 @@ class InscriptionController extends Controller
 				return redirect('inscription')->with('failed',"echec");
 			}
 		}
-    }
+         }
+}
 	
