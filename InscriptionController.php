@@ -12,19 +12,9 @@ use Illuminate\Support\Facades\DB;
 
 class InscriptionController extends Controller
 {
-    // afficher des users dont l'age est inférieur à 40 ans
-	// count sur le nombre de user enregsitré
-
-    public function insert(){
-
-		$liste = Inscription::where('age','<',40)->get();
-		$counts = Inscription::count();
-        return view('inscription',  compact('liste','counts'));
-    }
-	
-	// regsiter inscription user
-
-    public function create(Request $request){
+    
+	// register user  inscription 
+	public function create(Request $request){
 		
 		$messages = [
 			'nom.max' => 'Votre prénom ne peut avoir plus de :max caractères.',
@@ -72,5 +62,16 @@ class InscriptionController extends Controller
 			}
 		}
          }
+	
+	// afficher des users dont l'age est inférieur à 40 ans
+	// count sur le nombre de user enregsitré
+
+              public function insert(){
+
+		$liste = Inscription::where('age','<',40)->get();
+		$counts = Inscription::count();
+        return view('inscription',  compact('liste','counts'));
+    }
+	
 }
 	
