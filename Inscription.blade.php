@@ -5,7 +5,7 @@
 <div class="container">
 
 @if (session('status'))
-<div class="alert alert-success" role="aler">
+<div class="alert alert-success" role="alers">
 	{{ session('status') }}
 </div>
 @elseif(session('failed'))
