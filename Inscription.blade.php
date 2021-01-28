@@ -9,7 +9,7 @@
 	{{ session('status') }}
 </div>
 @elseif(session('failed'))
-<div class="alert alert-danger" role="alert">
+<div class="alert alert-danger" role="alerts">
 {{ session('failed') }}
 </div>
 @endif
