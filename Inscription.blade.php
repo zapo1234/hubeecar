@@ -24,7 +24,7 @@
   @endif
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput2">adresse</label>
+    <label for="formGroupExampleInput2">Adresse</label>
     <input type="text" class="form-control" id="formGroupExampleInput2" name="adresse" placeholder="" required>
   </div>
 
