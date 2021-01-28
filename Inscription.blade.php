@@ -18,13 +18,13 @@
 @csrf
   <div class="form-group">
     <label for="formGroupExampleInput">nom</label>
-    <input type="text" class="form-control" id="name" name="nom" plaeholder="" required>
+    <input type="text" class="form-control" id="formGroupExampleInput" name="nom" placeholder="" required>
   @if($errors->has('nom'))
   <div class="error">{{$errors->first('nom') }}</div>
   @endif
   </div>
-  <div class="form-grou">
-    <label for="formGroupExampleInput2">Adresse</label>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Adress</label>
     <input type="text" class="form-control" id="formGroupExampleInput2" name="adresse" placeholder="" required>
   </div>
 
