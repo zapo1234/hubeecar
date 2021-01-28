@@ -18,7 +18,7 @@
 @csrf
   <div class="form-group">
     <label for="formGroupExampleInput">nom</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" name="nom" placeholder="" required>
+    <input type="text" class="form-control" id="name" name="nom" placeholder="" required>
   @if($errors->has('nom'))
   <div class="error">{{$errors->first('nom') }}</div>
   @endif
